@@ -1,0 +1,125 @@
+<!doctype>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<header>
+<title>MonthlyReport</title>
+</header>
+
+<style>
+html { 
+  background: url(reportimg/reportdaily1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  color: rgb(102, 153, 153);
+}
+body
+{
+	padding: 150px 50px 50px;
+}
+h1
+{
+	font-size:8vw;
+	font-family:Sofia;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+.button
+{
+	float:right;
+	font-family: Times New Roman;
+	font-size: 20px;
+	padding: 5px 20px;
+	background-color: rgb(242, 242, 242);
+}
+.button:hover
+{
+	background-color: rgb(89, 89, 89);
+	color: white;
+	font-size:20px;
+}
+.btn
+{
+	background-color: rgb(89, 89, 89));
+	color: black;
+	font-size: 20px;
+	border-radius: 15px;
+	padding: 15px 30px;
+	font-family: Georgia, serif;
+	float: right;
+	position: bottom right;
+}
+.btn:hover
+{
+	background-color: rgb(89, 89, 89);
+	color: white;
+}
+table {
+  border-collapse: collapse;
+  width:50%;
+  margin:auto;
+  padding-left:500px;
+  padding-right:500px;
+  font-size:30px;
+}
+.datepicker
+{
+	font-size:20px;
+	font-family:Times New Roman;
+}
+</style>
+<body>
+<h1>Monthly Report</h1>
+<ul>
+  <li><a href="#home" style="width:20%">Home</a></li>
+  <li><a href="monitor.html" style="width:20%">Maintenance Record</a></li>
+  <li><a href="dstatus.php" style="width:20%">Approval</a></li>
+  <li><a href="../announcement/admin/admin_announcement_homepage.html" style="width:20%">Announcements</a></li>
+  <li><a href="report_homepage.html" style="width:20%">Report</a></li>
+</ul>
+
+<form action="viewmonthlyreport.php" method="post">
+
+<table>
+<tr><th>Select A Month to View Report: </th><td><input type="month" class="datepicker" name="month" value="month" required></td></tr>
+<tr><td><br></td><td><br></td></tr>
+<tr><td><br></td><td><br></td></tr>
+<td> </td><td><input type="submit" class="button" name="view" value="View"></td>
+</form></table>
+<br><br>
+<form action="report_homepage.html" method="post">
+<input type="submit" class="btn" value="Back">
+</form>
+</body>
+</html>

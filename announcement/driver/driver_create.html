@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Driver_Createpage</title>
+<style>
+body
+{
+	padding: 0px 50px 50px;
+	height: 100%;
+	background-color: lightblue;
+}
+textarea 
+{
+  width: 100%;
+  height: 50vh;
+  font-size: 14px;
+}
+fieldset
+{
+	padding: 25px 50px 25px;
+}
+div
+{
+	padding: 15px 50px 25px;
+}
+h1
+{
+	font-size: 50px;
+	font-family: Comic Sans MS;
+}
+.btnright
+{
+	float: right;
+	padding: 10px 25px;
+	border-radius: 10px;
+}
+</style>
+<script>
+function success(){
+	alert("You have successfully created the announcement!");
+}
+</script>
+<body>
+<h1>Create announcement</h1>
+
+<form action="driver_viewannouncement.php" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend>Create your announcement</legend>
+<table>
+
+<tr><td>Title: </td><td><input type="text" name="title" size="80" maxlength="60"></td></tr>
+
+<tr><td>Date: </td><td><input type="date" name="date"></td></tr>
+
+<tr><td>Driver id: </td><td style="color:red;"><input type="text" name="driver">*Please insert your own Driver id.</td></tr>
+
+</table>
+    <div><textarea placeholder="Create announcement here." name="textarea" rows="50" cols="50"></textarea></div>
+
+
+	
+<br>
+
+		<p style="color:red;">*Upload your image for announcement here.</p>
+			<p>**Insert your image url: <input  type="text" name="image"></p>
+			<br>
+
+</div>
+
+ 	<p align="right"><input type="submit" name="submit" value="Submit" class="btnright">
+</fieldset>	
+	</form>
+	<form action="driver_announcement_homepage.html">
+	<input type="submit" name="back" value="Back" class="btnright" align="right"></p>
+	</form>
+</body>
+</html>

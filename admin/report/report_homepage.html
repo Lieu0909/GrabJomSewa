@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+</head>
+<header>
+<title>Report</title>
+</header>
+
+<style>
+html { 
+  background: url(reportimg/report.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  color: rgb(102, 153, 153);
+}
+body
+{
+	padding: 35px 50px 50px;
+}
+h1
+{
+	font-size:10vw;
+	font-variant: small-caps;
+	text-shadow:5px 5px 5px white;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+h4
+{
+	font-size:2vw;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	cellspacing: 5px;
+	text-shadow:5px 5px 5px black;
+}
+
+table
+{
+	position: center;
+}
+input
+{
+	background-color: rgb(242, 242, 242);
+	color: black;
+	font-size: 25px;
+	border-radius: 25px;
+	padding: 25px 70px;
+	font-family: Georgia, serif;
+}
+input:hover{
+  background-color: rgb(102, 153, 153);
+}
+</style>
+
+<body>
+<h1>View Report</h1>
+<h4>Choose to view Daily / Monthly / Yearly report</h4>
+<ul>
+  <li><a href="#home" style="width:20%">Home</a></li>
+  <li><a href="../../driver/viewall.php" style="width:20%">Maintenance Record</a></li>
+  <li><a href="../../driver/dstatus.php" style="width:20%">Approval</a></li>
+  <li><a href="../announcement/admin/admin_announcement_homepage.html" style="width:20%">Announcements</a></li>
+  <li><a href="report_homepage.html" style="width:20%">Report</a></li>
+</ul>
+
+
+<table border="0" align="center" cellpadding="50px">
+<tr>
+<td>
+<form action="daily.html">
+<input type="submit" name="daily" value="Daily"/>
+</form>
+</td>
+<td>
+<form action="monthly.html">
+<input type="submit" name="monthly" value="Monthly"/>
+</form>
+</td>
+<td>
+<form action="yearly.html">
+<input type="submit" name="yearly" value="Yearly"/>
+</form>
+</td>
+
+
+<!--<tr><td><a href="daily.html"><img src="day.png" align="bottom" alt="create"/></a></td>
+<td><a href="monthly.html"><img src="month.png" align="bottom" alt="edit"/></a></td>
+<td><a href="yearly.html"><img src="year.png" align="bottom" alt="view"/></a></td></tr>
+<tr><td><center>Daily Report</center></td><td><center>Monthly Report</center></td><td><center>Yearly Report</center></td></tr>-->
+</table>
+</body>
+</html>

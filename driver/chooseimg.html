@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+
+	font-family: Comic Sans MS;
+}
+#next{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: Navy;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 15px;
+	width: 120px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+</style>
+</head>
+<body>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend>Upload your invoice of maintenance here.</legend>
+<p style="color:red">Please snap a image of your invoice, make sure that all the required details are included in the image.</p>
+<br>
+<div>
+<input  type="file" name="image" >
+<button id="next" type="submit" name="submit" >Upload Image</button>		
+</div>
+<br>
+<br>
+</fieldset>
+</form>
+</body>
+</html>
